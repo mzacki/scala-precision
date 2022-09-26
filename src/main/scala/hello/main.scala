@@ -1,4 +1,5 @@
 package edu.ant
+package hello
 
 @main
 def main(): Unit = {
