@@ -61,4 +61,14 @@ object Functional extends App {
   val listMapping = List(1, 2, 3).map(a => incrementer(a))
   val listMapping2 = List(4, 5, 6).map(x => 2 * x)
   println(listMapping.concat(listMapping2))
+
+  val flatMapping = List(6, 7, 8).flatMap(x => List(x, 3 * x))
+  println(flatMapping)
+
+  val filteringExample = List(1, 2, 3, 4, 5, 6, 7, 8, 9).filter(x => x <= 4)
+  // alt syntax - underscore
+  val filteringExample1 = List(1, 2, 3, 4, 5, 6, 7, 8, 9).filter(_ <= 4)
+  val filteringExample2 = List(1, 2, 3, 4, 5, 6, 7, 8, 9).filter(x => x % 2 == 0)
+
+
 }
