@@ -70,5 +70,16 @@ object Functional extends App {
   val filteringExample1 = List(1, 2, 3, 4, 5, 6, 7, 8, 9).filter(_ <= 4)
   val filteringExample2 = List(1, 2, 3, 4, 5, 6, 7, 8, 9).filter(x => x % 2 == 0)
 
+  val pairing = List(1, 2, 3, 4).flatMap(_ => List("x", "y", "z", "a"))
+  println(pairing)
+
+  val advancedPairing = List(1, 2, 3, 4).flatMap(n => List("x", "y", "z", "a").map(letter => s"$n - $letter"))
+  println(advancedPairing)
+
+  // alt syntax
+  val altPairing = for {
+    n <- List(1, 2, 3, 4)
+    l <- List("x", "y", "z", "a")
+  } yield s"$n - $l"
 
 }
