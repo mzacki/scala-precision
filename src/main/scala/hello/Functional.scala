@@ -28,7 +28,7 @@ object Functional extends App {
   // all Scala functions are instances of these traits
 
   // syntactic sugar form
-  val incrementer = new ((Int) => Int) {
+  val incrementer = new (Int => Int) {
     override def apply(v1: Int): Int = v1 + 1
   }
 
