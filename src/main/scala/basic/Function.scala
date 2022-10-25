@@ -1,6 +1,8 @@
 package edu.ant
 package basic
 
+import scala.annotation.tailrec
+
 object Function extends App {
 
 
@@ -30,6 +32,34 @@ object Function extends App {
     internalFunc(n, n + 1)
   }
   println(externalFunc(4))
+
+
+  def factorial(n: Int) : Int = if (n <= 1) 1 else factorial(n - 1) * n
+  println("Factorial: " + factorial(5))
+
+  def fibo(n: Int) : Int = if (n <= 1) 1 else fibo(n - 1) + fibo(n - 2)
+
+  def fibo2(n: Int) : Int = {
+    n match {
+      case 0 => 0
+      case 1 => 1
+      case 2 => 1
+      case _ => fibo2(n - 1) + fibo2(n - 2)
+    }
+  }
+
+  println(fibo2(5))
+
+  def primeCheck(n: Int) : Boolean = {
+    @tailrec
+    def divider(m: Int) : Boolean = {
+      if (m <= 1) true
+      else n % m != 0 && divider(m - 1)
+    }
+    divider(n / 2)
+  }
+
+  (1 to 10).foreach(a => println(a + " : " + primeCheck(a)))
 
 
 }
