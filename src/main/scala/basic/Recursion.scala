@@ -57,4 +57,17 @@ object Recursion extends App {
     else fiboRecursive(2, 1, 1)
   }
 
+  // preFizz
+  def preFizz(n: Int): Array[Int] = {
+    val array = Array[Int](n)
+    @tailrec
+    def helper(n: Int, array: Array[Int]): Array[Int] =
+      if (n == 0) array
+      else helper(n - 1, n +: array)
+
+    helper(n - 1, array)
+  }
+
+  println(preFizz(9).mkString("Array(", ", ", ")"))
+
 }

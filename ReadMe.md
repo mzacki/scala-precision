@@ -7,3 +7,4 @@ Blogs:
 * https://alvinalexander.com/
 * Java and Spring: https://mkyong.com/
 * https://www.baeldung.com/
+* Groovy and Java: https://www.mrhaki.com/
