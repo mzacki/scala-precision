@@ -1,5 +1,5 @@
 package edu.ant
-package intro
+package intro.oop
 
 object OOP extends App {
 
