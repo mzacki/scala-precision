@@ -11,6 +11,7 @@ object MethodNotations extends App{
     @targetName("compete") // https://docs.scala-lang.org/scala3/reference/other-new-features/targetName.html
     // name under which code from other languages can call the method
     def +(bee: Bee) = s"${this.race} is competing with ${bee.race}" // + is valid method name
+    def +(race: String) = new Bee(race, null) // oveloaded + method
     @targetName("not equal")
     def !(bee: Bee): Boolean = this.race != bee.race // ! is valid method name
     @targetName("custom unary")
