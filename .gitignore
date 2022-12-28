@@ -131,5 +131,8 @@ project/plugins/project/
 
 ### Scala ###
 
+# custom files:
+Dojo.*
+
 # End of https://www.gitignore.io/api/sbt,java,scala,intellij
 
