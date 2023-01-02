@@ -1,5 +1,5 @@
 package edu.ant
-package intro.oop
+package oop
 
 object ObjectsExplained extends App{
 

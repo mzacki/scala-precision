@@ -1,5 +1,5 @@
 package edu.ant
-package intro.oop
+package oop
 
 import scala.annotation.targetName
 import scala.language.postfixOps
