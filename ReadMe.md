@@ -13,6 +13,8 @@
 
 ### Kafka (data streaming platform that uses both Scala and Java):
 
+* [Jacek Laskowski - Apache Kafka i Kafka Streams praktycznie](https://www.youtube.com/watch?v=qYEvgtQLxqk)
+* [J. Laskowski online book: The Internals of Apache Kafka 2.4.0](https://jaceklaskowski.gitbooks.io/apache-kafka/content/)
 * [Apache Kafka](https://kafka.apache.org/)
 * [Apache Kafka and KSQL in Action : Let’s Build a Streaming Data Pipeline! by Robin Moffatt](https://www.youtube.com/watch?v=RJtEacDX4Oc)
 * ["EoS in Kafka: Listen up, I will only say this once!" by Jason Gustafson](https://www.youtube.com/watch?v=WscozkoXLHM)
