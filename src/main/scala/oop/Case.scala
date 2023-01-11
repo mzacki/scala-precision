@@ -17,4 +17,23 @@ object Case extends App {
   private val sth2 = Something("it's damn something", 99)
   println(sth == sth2) // shows true - if equals() was not implemented, it would showed false (comparing references in memory)
 
+  // 3) copy method
+  private val sth3 = sth.copy()
+  // or with overriding param:
+  private val sth4 = sth.copy(quantity = 64)
+
+  // 4) companion objects automatically created for case class
+  private val someCompanion = Something
+  private val someCompanionWithParams = Something("Companion something", 1)
+  // it calls apply() method
+  // same result as new Something(params)
+  // thus we do not have to use new keyword
+
+  // 5) default toString()
+  println(sth)
+
+  // 6) serializable
+
+  // 7)
+
 }
