@@ -1,6 +1,8 @@
 package edu.ant
 package basic
 
+import scala.annotation.targetName
+
 object NumberMethods extends App{
 
   // can invoke toString() on a number
@@ -8,6 +10,8 @@ object NumberMethods extends App{
   println(1.toString)
   // returns range
   val range = 1.to(10)
+  // or
+  val range2 = 1 to 10
   // to() belongs to RichInt class; there are others: RichDouble, RichChar
   range.foreach(n => println(n))
   // https://alvinalexander.com/scala/how-to-use-range-class-in-scala-cookbook/
@@ -24,5 +28,21 @@ object NumberMethods extends App{
   // String convertion
   println("64".toInt)
 
+  // no incremental ++ or --
+  // instead: +=1 or -+1
+  private var counter = 0
+  counter+=1
 
+  // BigInt, BigDecimal can be used with operators, no need for special methods like Java multiply() and so on:
+  val x: BigInt = 1234567890
+  println(x * x * x)
+  // so possible:
+  @targetName("mulitply three times")
+  private def ***(p: BigInt) = {
+    p * p * p
+  }
+
+  println(***(999))
+
+  
 }

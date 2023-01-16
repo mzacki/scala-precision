@@ -32,6 +32,20 @@ object MethodNotations extends App{
   println(1.+(2))
   // because all operators ARE METHODS: + is just a method name!
 
+  // operator is valid method name
+  // https://stackoverflow.com/questions/7888944/what-do-all-of-scalas-symbolic-operators-mean
+  @targetName("and")
+  private def &(bee: Bee, bee2: Bee) = {
+    (bee, bee2)
+  }
+  // example of such method:
+  println(&(bee, bee2))
+  // here it is returning a tuple
+  // see more:
+  // https://alvinalexander.com/scala/how-to-define-methods-return-multiple-items-tuples-scala/
+  // https://www.baeldung.com/scala/tuples
+  
+
   // prefix notation
   val x = -1 // - is unary operator
   val y = 1.unary_- // same as -1, unary works with -, +, and ~
