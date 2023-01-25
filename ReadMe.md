@@ -10,6 +10,7 @@
 * [Intro to Apache Spark for Java and Scala Developers - Ted Malaska (Cloudera)](https://www.youtube.com/watch?v=x8xXXqvhZq8)
 * [2019 - Patryk Pilarski - Apache Spark vs Machine Learning](https://www.youtube.com/watch?v=Ai8MdBKeHgc)
 * [@inline and @specialized: What do they do? Should I be using them? - by Chris Birchall](https://www.youtube.com/watch?v=WTeDaM3CC1I)
+* [Drawbacks in Scala environment: Scala Resurrection by John A. De Goes](https://degoes.net/articles/scala-resurrection)
 
 ### Kafka (data streaming platform that uses both Scala and Java):
 
